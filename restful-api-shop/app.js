@@ -17,6 +17,7 @@ mongoose.connect('mongodb://hoapnse05740:Camonem123@ds239071.mlab.com:39071/guit
 })
 
 app.use(morgan('dev'))
+app.use('/uploads', express.static('uploads'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
